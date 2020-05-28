@@ -1,4 +1,4 @@
-package com.android.cs.project.eforest_office;
+package com.android.cs.project.eforest;
 
 public class NewsClass {
     String time,heading,description,imageurl;

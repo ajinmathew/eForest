@@ -1,9 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ApplayApplication2">
+    tools:context=".ApplayApplication2"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="15dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BANK ACCOUNT DETAILS"
+        android:textSize="18dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a. ബാങ്കിന്റെ പേര് *"
+            android:textSize="14dp"
+            android:paddingLeft="10dp"
+            android:textColor="#090909"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameBank"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="b. ബാങ്ക് IFSC കോഡ് *"
+            android:textSize="14dp"
+            android:paddingLeft="10dp"
+            android:textColor="#090909"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ifscBank"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c. ബ്രാഞ്ചിന്റെ പേര് *"
+            android:textSize="14dp"
+            android:paddingLeft="10dp"
+            android:textColor="#090909"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/branchBank"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="d. ബാങ്ക് അക്കൗണ്ട് നമ്പർ *"
+            android:textSize="14dp"
+            android:paddingLeft="10dp"
+            android:textColor="#090909"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/accnoBank"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="e. ബാങ്ക് അക്കൗണ്ട് നമ്പർ വീണ്ടും നല്‍കുക *"
+            android:textSize="14dp"
+            android:paddingLeft="10dp"
+            android:textColor="#090909"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cnfaccnoBank"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPLOAD IMAGES"
+        android:textSize="18dp"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prgress"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="തിരിച്ചറിയല്‍ രേഖ*"
+        android:id="@+id/identityImg"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ബാങ്ക് പാസ്സ്‌ബുക്കിന്‍റെ അക്കൗണ്ട്‌ നമ്പര്‍ ഉള്ള പേജ്*"
+        android:id="@+id/passbookImg"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="നികുതി പണമടച്ച രസീത്/അവകാശി സർട്ടിഫിക്കറ്റ്*"
+        android:id="@+id/taxImg"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:id="@+id/saveBank"/>
+
+
+
+</LinearLayout>

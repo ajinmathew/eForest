@@ -6,19 +6,20 @@
     android:layout_height="wrap_content"
     android:clickable="true"
     app:cardCornerRadius="10dp"
-    android:layout_margin="20dp"
+    android:layout_margin="10dp"
     android:elevation="90dp"
     android:padding="15dp">
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
         android:background="@drawable/gradcardimage">
         
         <ImageView
-            android:layout_width="600px"
+            android:layout_width="match_parent"
             android:layout_height="500px"
+
             android:id="@+id/imageImgCard"/>
         <TextView
             android:layout_width="wrap_content"

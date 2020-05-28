@@ -1,9 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".HomeUi">
+<LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#E2DFE8"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".HomeUi"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <com.smarteist.autoimageslider.SliderLayout
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:background="#333333"
+                android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.3"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                    <Button
+                        android:background="@drawable/picgalleryui"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/galleryLog"
+                        android:gravity="center|bottom"
+                        android:layout_height="wrap_content"
+                        android:text="gallery"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:background="@drawable/picnews"
+                        android:layout_height="wrap_content"
+                        android:text="news"
+                        android:gravity="center|bottom"
+                        android:id="@+id/newsLog"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:background="@drawable/pichelpline"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="helpline"
+                        android:gravity="center|bottom"
+                        android:id="@+id/helplineLog"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <Button
+                        android:background="@drawable/picapplications"
+                        android:layout_height="wrap_content"
+                        android:text="application"
+                        android:gravity="center|bottom"
+                        android:id="@+id/applicationLog"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/picrapid"
+                        android:text="rapid response"
+                        android:gravity="center|bottom"
+                        android:id="@+id/rapidLog"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:background="@drawable/picnear"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="nearest Forest office"
+                        android:gravity="center|bottom"
+                        android:id="@+id/forsetoffLog"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <Button
+                        android:background="@drawable/picsocial"
+                        android:layout_height="wrap_content"
+                        android:text="social media"
+                        android:gravity="center|bottom"
+                        android:id="@+id/socialLog"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:background="@drawable/pic"
+                        android:layout_height="wrap_content"
+                        android:text="about"
+                        android:gravity="center|bottom"
+                        android:id="@+id/aboutLog"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/piclogout"
+                        android:text="logout"
+                        android:gravity="center|bottom"
+                        android:id="@+id/logoutLog"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
+

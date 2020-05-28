@@ -1,9 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PersonApplication">
+    tools:context=".PersonApplication"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="15dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="വനം കുറ്റകൃത്യങ്ങളില്‍ ഉള്‍പ്പെട്ടിട്ടുണ്ടോ?*  "
+            android:textSize="14dp"
+            android:paddingLeft="10dp"
+            android:textColor="#090909"/>
+        <RadioGroup
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="a. ഉണ്ട് "
+                android:id="@+id/yescrime"/>
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=" b. ഇല്ല"
+                android:id="@+id/nocrime"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="നഷ്ടപരിഹാരകാരണം *   "
+            android:textSize="14dp"
+            android:paddingLeft="10dp"
+            android:textColor="#090909"/>
+        <RadioGroup
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="a. മരണം"
+                android:id="@+id/diereason"/>
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="b. പരിക്ക്"
+                android:id="@+id/accreason"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="അപകടം രജിസ്റ്റർ ചെയ്ത പൊലീസ് സ്റ്റേഷന്‍റെ പേരും വിലാസവും"
+        android:textSize="14dp"
+        android:paddingLeft="10dp"
+        android:textColor="#090909"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/accidentregstation"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="പരിക്കേറ്റ / മരിച്ച ആളെ പരിശോധിച്ച മെഡിക്കല്‍ ഓഫീസറുടെ പേരും ,വിശദാംശങ്ങളും
+ പേര് *"
+            android:textSize="14dp"
+            android:paddingLeft="10dp"
+            android:textColor="#090909"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameDocter"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="രജിസ്ട്രേഷന്‍ നമ്പര്‍ *"
+            android:textSize="14dp"
+            android:paddingLeft="10dp"
+            android:textColor="#090909"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/regnoDoct"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="അപകട വിവരണം"
+            android:textSize="14dp"
+            android:paddingLeft="10dp"
+            android:textColor="#090909"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descAcc"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="അപേക്ഷകന്‍റെ പേര്*"
+            android:textSize="14dp"
+            android:paddingLeft="10dp"
+            android:textColor="#090909"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameAppli"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="സ്ഥലം"
+            android:textSize="14dp"
+            android:paddingLeft="10dp"
+            android:textColor="#090909"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/placeAppil"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/save2"
+        android:text="Save"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/next2"
+        android:visibility="invisible"
+        android:text="Next"/>
+
+
+
+
+</LinearLayout>

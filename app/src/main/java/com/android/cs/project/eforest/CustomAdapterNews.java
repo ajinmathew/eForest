@@ -1,4 +1,4 @@
-package com.android.cs.project.eforest_office;
+package com.android.cs.project.eforest;
 
 
 import android.content.Context;

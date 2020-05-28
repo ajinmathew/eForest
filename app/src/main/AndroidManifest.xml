@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.cs.project.eforest">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,15 +13,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Signup"></activity>
-        <activity android:name=".User_signup" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".DisplayApplication"></activity>
+        <activity android:name=".ApplicationHome" />
+        <activity android:name=".AboutApp" />
+        <activity android:name=".SocialMedia" />
+        <activity android:name=".HelpLine" />
+        <activity android:name=".ViewApplication" />
+        <activity android:name=".Main2Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".HomeUi" />
+        <activity android:name=".PropertyLossApplication" />
+        <activity android:name=".CropLossApplication" />
+        <activity android:name=".CattleDeathApplication" />
+        <activity android:name=".PersonApplication" />
+        <activity android:name=".ApplayApplication2" />
+        <activity android:name=".ApplayApplication" />
+        <activity android:name=".RapidResponse" />
+        <activity android:name=".ViewImage" />
+        <activity android:name=".Gallery" />
+        <activity android:name=".ViewNews" />
+        <activity android:name=".News" />
+        <activity android:name=".UserRegisteration2" />
+        <activity android:name=".User_signup" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

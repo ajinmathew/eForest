@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/nameUserReg"
         android:background="@drawable/edt_disg"
         android:inputType="text"
         android:layout_width="match_parent"
@@ -43,7 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <EditText
-                android:id="@+id/phone"
+                android:id="@+id/phoneUserReg"
                 android:inputType="phone"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/edt_disg"
@@ -57,7 +57,7 @@
         android:layout_height="wrap_content">
     <Button
         android:layout_marginTop="10dp"
-        android:id="@+id/verify"
+        android:id="@+id/verifyUserReg"
         android:text="Verify"
         android:background="@drawable/btnuserdesig"
         android:layout_width="wrap_content"
@@ -76,14 +76,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     <EditText
-        android:id="@+id/otp"
+        android:id="@+id/otpUserReg"
         android:background="@drawable/edt_disg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
         <Button
             android:layout_marginTop="10dp"
-            android:id="@+id/otpbtn"
-            android:text="submit"
+            android:id="@+id/otpbtnUserReg"
+            android:layout_gravity="center"
+            android:text="Register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>

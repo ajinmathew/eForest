@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:width="100dp"
-        android:height="120dp">
+    <item android:width="130dp"
+        android:height="140dp">
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
-<solid
-    android:color="#943999EC"/>
+
 </shape>
 </item>
     <item
         android:width="50dp"
         android:height="50dp"
-        android:gravity="center_horizontal"
-        android:drawable="@drawable/ic_person_black_24dp"/>
+        android:gravity="center"
+        android:drawable="@drawable/info"/>
 </layer-list>

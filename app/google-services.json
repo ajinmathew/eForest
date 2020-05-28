@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "659395228553",
+    "firebase_url": "https://eforest-eefb8.firebaseio.com",
+    "project_id": "eforest-eefb8",
+    "storage_bucket": "eforest-eefb8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659395228553:android:c3b82a3a5a049e697ca758",
+        "android_client_info": {
+          "package_name": "com.android.cs.project.eforest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659395228553-7tg3o2sr9nhkuuop59co9jd2pbqu3k1k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.cs.project.eforest",
+            "certificate_hash": "e0f3b0422b25b6839028c04cabdee48fab1cc9b8"
+          }
+        },
+        {
+          "client_id": "659395228553-j74419uhqrgatp8a0tkhbnulgdvmpbh7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.cs.project.eforest",
+            "certificate_hash": "4a5332918ba9c5d0e2663ee3aaa504fb24c7f2e0"
+          }
+        },
+        {
+          "client_id": "659395228553-o8codn2t40730crvj35932pjtijql990.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.cs.project.eforest",
+            "certificate_hash": "d1e5203ea9a9b4b1c0c9ff2a20f8145d045a39ab"
+          }
+        },
+        {
+          "client_id": "659395228553-tloju1n0m2g82j9j3k9gl6rhtf367438.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQSqfFHaLBOKnn8a2RP1J-_SJubTjmBM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659395228553-tloju1n0m2g82j9j3k9gl6rhtf367438.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659395228553:android:938ca5a6ccbc4d5a7ca758",
+        "android_client_info": {
+          "package_name": "com.android.cs.project.eforest_office"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659395228553-n5nsaifaefvsaamrvdr6homcsfm6gcdb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.cs.project.eforest_office",
+            "certificate_hash": "4a5332918ba9c5d0e2663ee3aaa504fb24c7f2e0"
+          }
+        },
+        {
+          "client_id": "659395228553-tloju1n0m2g82j9j3k9gl6rhtf367438.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQSqfFHaLBOKnn8a2RP1J-_SJubTjmBM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659395228553-tloju1n0m2g82j9j3k9gl6rhtf367438.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

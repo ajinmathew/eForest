@@ -16,31 +16,31 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class News extends AppCompatActivity {
+public class Gallery extends AppCompatActivity {
     RecyclerView recyclerView;
     RecyclerView.Adapter adapter;
     DatabaseReference reference;
-    List<NewsClass> newslist;
+    List<Image> imagelist;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_news);
+        setContentView(R.layout.activity_gallery);
 
-        recyclerView=(RecyclerView)findViewById(R.id.recyclerviewNews);
+        recyclerView=(RecyclerView)findViewById(R.id.recyclerviewGallery);
         recyclerView.setHasFixedSize(true);
 
-        newslist=new ArrayList<>();
-        recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(),1));
-        reference= FirebaseDatabase.getInstance().getReference().child("eForest").child("News");
+        imagelist=new ArrayList<>();
+        recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
+        reference= FirebaseDatabase.getInstance().getReference().child("eForest").child("Gallery");
         reference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for(DataSnapshot dataNews:dataSnapshot.getChildren()){
-                    NewsClass newsClass=dataNews.getValue(NewsClass.class);
-                    newslist.add(newsClass);
+                for(DataSnapshot dataImg:dataSnapshot.getChildren()){
+                    Image image=dataImg.getValue(Image.class);
+                    imagelist.add(image);
                 }
 
-                adapter=new CustomAdapterNews(newslist,getApplicationContext());
+                adapter=new CustomAdapterImage(imagelist,getApplicationContext());
                 recyclerView.setAdapter(adapter);
 
             }
@@ -50,6 +50,7 @@ public class News extends AppCompatActivity {
 
             }
         });
+
 
     }
 }
